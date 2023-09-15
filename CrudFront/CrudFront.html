@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CrudStyle.css" >
+    <title>Polizas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li><a href="CrudFront.html">Registrar Polizas</a></li>
+            <li><a href="ConsultarPoliza.html">Consultar Polizas</a></li>
+         </ul>
+        </nav>
+      </header>
+    <h1>REGISTRO DE POLIZAS</h1>
+    <div class="formbold-main-wrapper">
+
+        <div class="formbold-form-wrapper">
+            <form>
+                <div class="formbold-input-flex">
+                  <div>
+                      <input
+                      type="text"
+                      name="idPoliza"
+                      id="idPoliza"
+                      placeholder=""
+                      class="formbold-form-input"
+                      />
+                      <label for="idPoliza" class="formbold-form-label"> Id Poliza </label>
+                  </div>
+                  <div>
+                      <input
+                      type="text"
+                      name="idEmpleado"
+                      id="idEmpleado"
+                      placeholder=""
+                      class="formbold-form-input"
+                      />
+                      <label for="idEmpleado" class="formbold-form-label"> #Empleado </label>
+                  </div>
+                </div>
+        
+                <div class="formbold-input-flex">
+                  <div>
+                      <input
+                      type="text"
+                      name="SKU"
+                      id="SKU"
+                      placeholder=""
+                      class="formbold-form-input"
+                      />
+                      <label for="SKU" class="formbold-form-label"> SKU </label>
+                  </div>
+                  <div>
+                      <input
+                      type="text"
+                      name="cantidad"
+                      id="cantidad"
+                      placeholder=""
+                      class="formbold-form-input"
+                      />
+                      <label for="cantidad" class="formbold-form-label"> Cantidad </label>
+                  </div>
+                </div>
+        
+                <button id="btnRegistrar" class="formbold-btn">
+                    Registrar Poliza
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="CrudFront.js"></script>
+</body>
+</html>

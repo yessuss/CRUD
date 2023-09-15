@@ -1,0 +1,31 @@
+CREATE TABLE Inventario (
+	SKU INT NOT NULL,
+	Nombre CHARACTER VARYING,
+	Cantidad SMALLINT,
+	PRIMARY KEY (SKU)
+);
+
+CREATE TABLE Empleado (
+	IdEmpleado INT NOT NULL,
+	Nombre CHARACTER VARYING NOT NULL,
+	Apellido CHARACTER VARYING,
+	Puesto CHARACTER VARYING,
+	PRIMARY KEY (IdEmpleado)
+);
+
+
+CREATE TABLE Polizas (
+	IdPolizas INT NOT NULL,
+	EmpleadoGenero INT NOT NULL,
+	SKU INT NOT NULL,
+	Cantidad SMALLINT,
+	Fecha DATE,
+	PRIMARY KEY (IdPolizas),
+	CONSTRAINT FK_EmpleadoGenero
+    FOREIGN KEY(EmpleadoGenero) 
+    REFERENCES Empleado(IdEmpleado),
+	CONSTRAINT FK_SKU
+    FOREIGN KEY(SKU) 
+    REFERENCES Inventario(SKU)
+);
+

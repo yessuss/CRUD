@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ConsultarPoliza.css">
+    <link rel="stylesheet" href="CrudStyle.css" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Polizas</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+        <ul>
+        <li><a href="CrudFront.html">Registrar Polizas</a></li>
+        <li><a href="ConsultarPoliza.html">Consultar Polizas</a></li>
+     </ul>
+    </nav>
+  </header>
+    <br><br> 
+    <table id="tabla">
+        <thead>
+          <tr>
+            <th colspan="6">Consulta de Polizas</th>
+          </tr>
+          <tr>
+            <th>#Poliza</th>
+            <th>Empleado</th>
+            <th>SKU</th>
+            <th>Nombre Producto</th>
+            <th>Cantidad</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <div id="formulario">
+      <h1>MODIFICACION DE POLIZAS</h1>
+    <div class="formbold-main-wrapper">
+
+        <div class="formbold-form-wrapper">
+            <form>
+                <div class="formbold-input-flex">
+                  <div>
+                      <input
+                      type="text"
+                      name="idPoliza"
+                      id="idPoliza"
+                      placeholder=""
+                      class="formbold-form-input"
+                      disabled
+                      />
+                      <label for="idPoliza" class="formbold-form-label"> Id Poliza </label>
+                  </div>
+                  <div>
+                      <input
+                      type="text"
+                      name="idEmpleado"
+                      id="idEmpleado"
+                      placeholder=""
+                      class="formbold-form-input"
+                      />
+                      <label for="idEmpleado" class="formbold-form-label"> #Empleado </label>
+                  </div>
+                </div>
+        
+                <div class="formbold-input-flex">
+                  <div>
+                      <input
+                      type="text"
+                      name="SKU"
+                      id="SKU"
+                      placeholder=""
+                      class="formbold-form-input"
+                      />
+                      <label for="SKU" class="formbold-form-label"> SKU </label>
+                  </div>
+                  <div>
+                      <input
+                      type="text"
+                      name="cantidad"
+                      id="cantidad"
+                      placeholder=""
+                      class="formbold-form-input"
+                      />
+                      <label for="cantidad" class="formbold-form-label"> Cantidad </label>
+                  </div>
+                </div>
+        
+                <button id="btnActualizar" class="formbold-btn">
+                    Actualizar
+                </button>
+                <button id="btnCancelar" class="formbold-btn">
+                  Cancelar
+              </button>
+            </form>
+        </div>
+    </div>
+  </div>
+
+      <script src="ConsultarPoliza.js"></script>
+</body>
+</html>
